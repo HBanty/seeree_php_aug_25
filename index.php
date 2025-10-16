@@ -178,17 +178,116 @@ it is slower than GET method.
  $_REQUEST is not used mostely ,because $_POST and $_GET are more commonly used.
   -->
 
-<?php
-if (isset($_REQUEST['btn'])) {
-	$fno=$_REQUEST['fno'];
-	$sno=$_REQUEST['sno'];
-	$res=$fno+$sno;
-	echo "the sum is : $res";
-   }
-	?>
+<!-- 
+// if (isset($_REQUEST['btn'])) {
+// 	$fno=$_REQUEST['fno'];
+// 	$sno=$_REQUEST['sno'];
+// 	$res=$fno+$sno;
+// 	echo "the sum is : $res";
+//    }
+// 	?>
 
   <form  method="get">
 	<input type="text" name="fno" placeholder="enter first number "><br>
 	<input type="text" name="sno" placeholder="enter second  number "><br>
 	<input type="submit" name="btn" value="add">
-</form>
+</form> -->
+
+
+
+<!-- 
+// class  Student {
+// 	public $stdname="bunty babu";
+// 	function __construct(){
+// 		echo"this is parent class constructor  <br>
+
+
+// 	}
+// }
+
+// class MyStudent extends Student{
+// 	public $stdname="sai kiran	";
+// 	function __construct(){
+// 		parent::__construct();
+// 		echo "this is child class constructor <br>";	
+< // 		function __destruct(){
+// 			echo"this is child class destructor <br>";
+// 		}	
+// 	}
+
+	
+// }}
+// $obj=new MyStudent();
+// echo $obj->stdname; -->
+ 
+
+<!-- 
+// abstract class
+// abstract class myabStractClass{
+// 	abstract function show();
+// 	abstract function display();
+// }
+
+
+// abstract class myclass extends myabStractClass{
+// 	abstract function show(): void{
+// 		echo"this is show method";
+		
+// 	}
+// }
+// class myclass2 extends myclass {
+	
+// 	abstract function display(): void{
+// 		echo"this is show method";
+		
+// 	}
+// } -->
+
+<?php
+// interface myNewInterface{
+// 	function show();
+
+// }
+// interface myInterface extends myNewInterface{
+// 	function display();
+// }
+
+// abstract class mynewAbstractClass implements myInterface{
+// 	abstract function show(): void;
+// 	abstract function display(): void;
+// }
+
+// abstract class myclass extends mynewAbstractClass{
+// 	 function show(): void;{
+// 		echo"this is show method";
+
+// 	}
+// }	
+
+
+// abstract class myclass2 extends myclass {
+	
+// 	 function display(): void{
+// 		echo"this is display method";
+
+// 	}
+// }
+// $obj=new myclass2();
+// $obj->show();
+// $obj->display();
+
+
+$img=imagecreate(200,200);
+
+imagefilter($img,IMG_FILTER_GRAYSCALE);
+imagejpeg($img,'demo.jpeg');
+
+
+
+
+
+?>
+
+
+<img src="./demo.jpeg" alt="" height="200" width="200">
+
